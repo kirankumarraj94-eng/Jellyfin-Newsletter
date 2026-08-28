@@ -1457,6 +1457,11 @@
                     html += '      <input id="email-from-' + config.Id + '" type="text" is="emby-input" value="' + (config.FromAddr || '') + '" onchange="updateEmailConfigFromUI(\'' + config.Id + '\')" />';
                     html += '    </div>';
                     html += '    <div class="inputContainer">';
+                    html += '      <label class="inputLabel inputLabelUnfocused">From Name:</label>';
+                    html += '      <input id="email-from-name-' + config.Id + '" type="text" is="emby-input" value="' + (config.FromName || 'Jellyfin') + '" onchange="updateEmailConfigFromUI(\'' + config.Id + '\')" />';
+                    html += '      <div class="fieldDescription">The name recipients will see as the sender.</div>';
+                    html += '    </div>';
+                    html += '    <div class="inputContainer">';
                     html += '      <label class="inputLabel inputLabelUnfocused">Subject:</label>';
                     html += '      <input id="email-subject-' + config.Id + '" type="text" is="emby-input" value="' + (config.Subject || '') + '" onchange="updateEmailConfigFromUI(\'' + config.Id + '\')" />';
                     html += '    </div>';

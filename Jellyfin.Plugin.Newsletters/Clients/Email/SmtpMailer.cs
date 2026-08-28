@@ -73,6 +73,7 @@ public class SmtpMailer(IServerApplicationHost appHost,
             int portNumber = emailConfig.SMTPPort;
             bool enableSSL = emailConfig.EnableSsl;
             string emailFromAddress = emailConfig.FromAddr;
+            string emailFromName = emailConfig.FromName;
             string username = emailConfig.SMTPUser;
             string password = emailConfig.SMTPPass;
             string emailToAddress = emailConfig.VisibleToAddr;

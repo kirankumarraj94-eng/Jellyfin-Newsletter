@@ -4,17 +4,17 @@
         "name": "Newsletters",
         "description": "This plugin populates a list of recently added/deleted/updated media and upcoming content (via Radarr/Sonarr), sends out the newsletter to configured clients(email, discord webhook, telegram & matrix).",
         "overview": "Send newsletters for recently added/deleted/updated/upcoming media",
-        "owner": "Sanidhya30",
+        "owner": "kirankumarraj94-eng",
         "category": "General",
         "imageUrl": "https://raw.githubusercontent.com/Sanidhya30/Jellyfin-Newsletter/master/images/logo.png",
         "versions": [
             {
                 "version": "1.8.0.1",
-                "changelog": "- Added configurable From Name for email newsletters.",
+                "changelog": "- Feature: Added configurable email From Name.\n- Improvement: Email messages can now display a friendly sender name.",
                 "targetAbi": "10.11.0.0",
-                "sourceUrl": "https://github.com/Sanidhya30/Jellyfin-Newsletter/releases/download/v1.8.0.0/newsletters_1.8.0.0.zip",
-                "checksum": "64e0bb344800c90e2a38a6e287d3fe7e",
-                "timestamp": "2026-08-23T14:23:38Z"
+                "sourceUrl": "https://github.com/kirankumarraj94-eng/Jellyfin-Newsletter/releases/download/v1.8.0.1/newsletters_1.8.0.1.zip",
+                "checksum": "0a378b5b382c90144b4ae1b1adfb491d",
+                "timestamp": "2026-08-28T00:00:00Z"
             },
             {
                 "version": "1.7.0.0",

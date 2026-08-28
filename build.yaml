@@ -2,13 +2,13 @@
 name: "Newsletters"
 guid: "60f478ab-2dd6-4ea0-af10-04d033f75979"
 imageUrl: "https://raw.githubusercontent.com/Sanidhya30/Jellyfin-Newsletter/master/images/logo.png"
-version: "1.8.0.0"
+version: "1.8.0.1"
 targetAbi: "10.11.0.0"
 framework: "net9.0"
 overview: "Send newsletters for recently added/deleted/updated/upcoming media"
 description: "This plugin populates a list of recently added/deleted/updated media and upcoming content (via Radarr/Sonarr), sends out the newsletter to configured clients(email, discord webhook, telegram & matrix)."
 category: "General"
-owner: "Sanidhya30"
+owner: "kirankumarraj94-eng"
 artifacts:
   - "Jellyfin.Plugin.Newsletters.dll"
   - "SQLitePCL.pretty.dll"
@@ -17,9 +17,5 @@ artifacts:
   - "MimeKit.dll"
   - "BouncyCastle.Cryptography.dll"
 changelog: |
-  - Feature: Added a Preview tab to see and curate everything queued for the next newsletter.
-  - Feature: Added a Featured section to pin hand-picked titles to the top of the newsletter.
-  - Feature: Added Discord mentions support for @everyone, @here, roles and users.
-  - Feature: Added configurable Discord embed colors for the Upcoming and Featured sections.
-  - Maintenance: Updated SixLabors.ImageSharp from 4.0.0 to 4.1.1.
-  - FULL CHANGELOG: https://raw.githubusercontent.com/Sanidhya30/Jellyfin-Newsletter/master/CHANGELOG.md
+  - Feature: Added configurable email From Name.
+  - Improvement: Email messages can now display a friendly sender name.

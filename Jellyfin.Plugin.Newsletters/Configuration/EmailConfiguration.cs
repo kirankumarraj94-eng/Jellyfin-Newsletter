@@ -59,6 +59,11 @@ public class EmailConfiguration : ITemplatedConfiguration
     public string FromAddr { get; set; } = "JellyfinNewsletter@donotreply.com";
 
     /// <summary>
+    /// Gets or sets the display name shown to email recipients.
+    /// </summary>
+    public string FromName { get; set; } = "Jellyfin";
+    
+    /// <summary>
     /// Gets or sets the email subject.
     /// </summary>
     public string Subject { get; set; } = "Jellyfin Newsletter";

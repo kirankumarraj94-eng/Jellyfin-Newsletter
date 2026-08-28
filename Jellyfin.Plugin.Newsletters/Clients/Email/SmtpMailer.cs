@@ -124,7 +124,7 @@ public class SmtpMailer(IServerApplicationHost appHost,
             builtString = hb.ReplaceDatePlaceholders(builtString);
 
             var mail = new MimeMessage();
-            mail.From.Add(new MailboxAddress(emailFromAddress, emailFromAddress));
+            mail.From.Add(new MailboxAddress(emailFromName, emailFromAddress));
             mail.Subject = subject;
 
             if (!string.IsNullOrWhiteSpace(emailToAddress))
@@ -302,7 +302,7 @@ public class SmtpMailer(IServerApplicationHost appHost,
                         hb.TemplateReplace(HtmlBuilder.ReplaceBodyWithBuiltString(body, builtString), "{ServerURL}", Config.Hostname));
 
                     var mail = new MimeMessage();
-                    mail.From.Add(new MailboxAddress(emailFromAddress, emailFromAddress));
+                    mail.From.Add(new MailboxAddress(emailFromName, emailFromAddress));
 
                     if (!string.IsNullOrWhiteSpace(emailToAddress))
                     {
